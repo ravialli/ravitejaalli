@@ -131,10 +131,6 @@ h1 { font-size: clamp(54px, 6.4vw, 92px); line-height: .98; letter-spacing: -.06
 .project-metric { margin-top:30px; padding-top:22px; border-top:1px solid var(--line); display:flex; align-items:baseline; gap:12px; }
 .project-metric strong { font-size:34px; color:var(--accent); letter-spacing:-.05em; }
 .project-metric span { color:#8397ae; font-size:12px; }
-.cricket-card { grid-column:1/-1; padding:0; min-height:480px; display:grid; grid-template-columns:.8fr 1.2fr; }
-.cricket-photo { overflow:hidden; min-height:440px; }
-.cricket-photo img { width:100%; height:100%; object-fit:cover; object-position:50% 35%; }
-.cricket-content { padding:40px; align-self:center; }
 .project-note { margin-top:24px; padding-top:20px; border-top:1px solid var(--line); font-size:13px; }
 
 .timeline { border-top:1px solid var(--line); }
@@ -172,10 +168,9 @@ h1 { font-size: clamp(54px, 6.4vw, 92px); line-height: .98; letter-spacing: -.06
 .beyond-section { background:#eef5fb; color:#07111f; }
 .beyond-section .eyebrow { color:#2d6680; }
 .section-heading.light > p { color:#52697d; }
-.beyond-grid { display:grid; grid-template-columns:.8fr 1.2fr; gap:18px; }
+.beyond-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
 .beyond-card { position:relative; overflow:hidden; border-radius:26px; min-height:470px; margin:0; background:#dce9f2; }
-.beyond-card.wide { min-height:470px; }
-.beyond-card img { width:100%; height:100%; object-fit:cover; }
+.beyond-card img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 32%; }
 .beyond-card.tall img { object-position:center 42%; }
 .beyond-card.wide img { object-position:center; }
 .beyond-card::after { content:""; position:absolute; inset:0; background:linear-gradient(to top, rgba(4,12,20,.7), transparent 45%); }
@@ -235,10 +230,9 @@ h1 { font-size: clamp(54px, 6.4vw, 92px); line-height: .98; letter-spacing: -.06
   .impact-item:nth-child(1), .impact-item:nth-child(2) { border-bottom:1px solid var(--line); }
   .section-heading h2 { font-size:46px; }
   .project-grid { grid-template-columns:1fr; }
-  .project-wide, .cricket-card { grid-column:auto; grid-template-columns:1fr; }
+  .project-wide { grid-column:auto; grid-template-columns:1fr; }
   .project-wide .project-index { margin-bottom:0; }
   .project-result { grid-column:auto; }
-  .cricket-photo { min-height:360px; }
   .timeline-item { grid-template-columns:1fr; gap:14px; }
   .tool-grid { grid-template-columns:1fr; }
   .cert-grid { grid-template-columns:1fr; }
