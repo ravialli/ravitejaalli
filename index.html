@@ -3,16 +3,60 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>document.documentElement.classList.add('js');</script>
   <meta name="description" content="Ravi Teja Alli is a Cloud Operations Engineer focused on Kubernetes, SRE, multi-cloud infrastructure, observability, distributed systems, and AI-assisted operations." />
   <meta name="theme-color" content="#07111f" />
+  <link rel="canonical" href="https://www.ravitejaalli.com/" />
+
   <meta property="og:title" content="Ravi Teja Alli | Cloud Infrastructure · Kubernetes · SRE · AI" />
   <meta property="og:description" content="Building reliable cloud platforms and distributed systems across AWS, Azure, and GCP." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.ravitejaalli.com/" />
-  <meta property="og:image" content="assets/chicago.webp" />
+  <meta property="og:image" content="https://www.ravitejaalli.com/assets/chicago.webp" />
+  <meta property="og:image:alt" content="Ravi Teja Alli by the Chicago lakefront skyline" />
+  <meta property="og:image:width" content="1800" />
+  <meta property="og:image:height" content="1350" />
+  <meta property="og:site_name" content="Ravi Teja Alli" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ravi Teja Alli | Cloud Infrastructure · Kubernetes · SRE · AI" />
+  <meta name="twitter:description" content="Building reliable cloud platforms and distributed systems across AWS, Azure, and GCP." />
+  <meta name="twitter:image" content="https://www.ravitejaalli.com/assets/chicago.webp" />
+  <meta name="twitter:image:alt" content="Ravi Teja Alli by the Chicago lakefront skyline" />
+
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="assets/chicago.webp" fetchpriority="high" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
   <link rel="stylesheet" href="styles.css" />
   <title>Ravi Teja Alli | Cloud Infrastructure · Kubernetes · SRE · AI</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ravi Teja Alli",
+    "url": "https://www.ravitejaalli.com/",
+    "image": "https://www.ravitejaalli.com/assets/portrait.webp",
+    "jobTitle": "Cloud Operations Engineer",
+    "email": "mailto:raviteja.alli@gmail.com",
+    "worksFor": { "@type": "Organization", "name": "Cumulocity GmbH" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Springfield", "addressRegion": "IL", "addressCountry": "US" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Illinois Springfield" },
+      { "@type": "CollegeOrUniversity", "name": "Mewar University" }
+    ],
+    "knowsAbout": ["Kubernetes", "Site Reliability Engineering", "Cloud Infrastructure", "Observability", "Distributed Systems", "AWS", "Azure", "GCP", "Terraform", "GitOps"],
+    "sameAs": [
+      "https://linkedin.com/in/ravi-tejaa",
+      "https://github.com/ravialli"
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -34,7 +78,7 @@
         <a href="#toolbox">Toolbox</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a class="nav-resume" href="assets/Ravi_Teja_Alli_Resume.docx" download>Résumé</a>
+        <a class="nav-resume" href="assets/Ravi_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
       </nav>
     </div>
   </header>
@@ -47,13 +91,15 @@
         <p class="hero-lead">I design, automate, troubleshoot, and operate production infrastructure across AWS, Azure, and GCP, with a focus on Kubernetes, observability, distributed systems, and practical AI for operations.</p>
         <div class="hero-actions">
           <a class="button primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
-          <a class="button ghost" href="assets/Ravi_Teja_Alli_Resume.docx" download>Download résumé</a>
+          <a class="button ghost" href="assets/Ravi_Resume.pdf" download>Download résumé</a>
         </div>
         <div class="hero-meta" aria-label="Professional links">
           <a href="mailto:raviteja.alli@gmail.com">raviteja.alli@gmail.com</a>
-          <span>•</span>
+          <span class="sep">•</span>
           <a href="https://linkedin.com/in/ravi-tejaa" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <span>•</span>
+          <span class="sep">•</span>
+          <a href="https://github.com/ravialli" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span class="sep">•</span>
           <span>Springfield, IL</span>
         </div>
       </div>
@@ -242,6 +288,7 @@
         <div class="contact-actions">
           <a class="button primary" href="mailto:raviteja.alli@gmail.com">Email me <span aria-hidden="true">↗</span></a>
           <a class="button ghost" href="https://linkedin.com/in/ravi-tejaa" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="button ghost" href="https://github.com/ravialli" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </section>
