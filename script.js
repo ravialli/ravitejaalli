@@ -3,8 +3,15 @@ const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav-links');
 
 window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 12);
-});
+  header?.classList.toggle('scrolled', window.scrollY > 12);
+}, { passive: true });
+
+const closeNav = () => {
+  if (!nav?.classList.contains('open')) return;
+  nav.classList.remove('open');
+  menuButton?.setAttribute('aria-expanded', 'false');
+  menuButton?.setAttribute('aria-label', 'Open navigation');
+};
 
 menuButton?.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
@@ -13,13 +20,23 @@ menuButton?.addEventListener('click', () => {
 });
 
 nav?.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuButton?.setAttribute('aria-expanded', 'false');
-  });
+  link.addEventListener('click', closeNav);
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
+// Close the mobile menu on Escape or when clicking outside it.
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeNav();
+});
+document.addEventListener('click', (e) => {
+  if (nav?.classList.contains('open') &&
+      !nav.contains(e.target) &&
+      !menuButton?.contains(e.target)) {
+    closeNav();
+  }
+});
+
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 const revealEls = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {

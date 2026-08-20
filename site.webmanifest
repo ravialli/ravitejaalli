@@ -1,0 +1,13 @@
+{
+  "name": "Ravi Teja Alli",
+  "short_name": "Ravi Alli",
+  "description": "Cloud Operations Engineer — Kubernetes, SRE, multi-cloud infrastructure, observability, and practical AI for operations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": [
+    { "src": "assets/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "assets/apple-touch-icon.png", "type": "image/png", "sizes": "180x180" }
+  ]
+}
